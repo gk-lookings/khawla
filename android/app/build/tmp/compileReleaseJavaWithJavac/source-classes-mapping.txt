@@ -1,0 +1,9 @@
+com/khawla/MainApplication.java
+ org.evillage.khawlafoundation.MainApplication
+ org.evillage.khawlafoundation.MainApplication$1
+org/evillage/khawlafoundation/BuildConfig.java
+ org.evillage.khawlafoundation.BuildConfig
+com/khawla/MainActivity.java
+ org.evillage.khawlafoundation.MainActivity
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList

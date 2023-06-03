@@ -1,0 +1,6 @@
+module Pods_Khawla {
+  umbrella header "Pods-Khawla-umbrella.h"
+
+  export *
+  module * { export * }
+}

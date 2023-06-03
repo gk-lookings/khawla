@@ -1,0 +1,25 @@
+const Images= {
+    logo: require('./images/logo.png'),
+    logoFull: require('./images/logofinal.png'),
+    logoLetter: require('./images/logo_letter.png'),
+    khawlaTop: require('./images/blue_logo.jpg'),
+    khawlaBottom: require('./images/bottom_design.png'),
+    fb: require('./images/fb.png'),
+    google: require('./images/google.png'),
+    default: require('./images/default.png'),
+    camera: require('./images/camera.png'),
+    cover: require('./images/cover.jpg'),
+    model: require('./images/model.png'),
+    design: require('./images/design.png'),
+    logo_letter_no_line: require('./images/logo_letter_no_line.png'),
+    intro: require('./images/intro.jpeg'),
+    cart: require('./images/cart.png'),
+    MOE_AR: require('./images/MOE-LOGOAR.png'),
+    MOE_EN: require('./images/MOE-LOGOEN.png'),
+    online_store : require('./images/kac.jpeg'),
+    peace : require('./images/peace.jpeg'),
+    linktree : require('./images/linktree.png'),
+    logoLetterNew: require('./images/kacflogoNewsletter.jpg'),
+
+}
+export default Images
