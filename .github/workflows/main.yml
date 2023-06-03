@@ -57,14 +57,14 @@ jobs:
       - name: Build IOS App
         uses: yukiarrr/ios-build-action@v1.4.0
         with:
-          project-path: ios/ci_cd.xcodeproj
+          project-path: ios/Khawla.xcodeproj
           p12-base64: ${{ secrets.IOS_P12_BASE64 }}
           mobileprovision-base64: ${{ secrets.IOS_MOBILE_PROVISION_BASE64 }}
           code-signing-identity: 'iPhone Distribution'
           team-id: ${{ secrets.IOS_TEAM_ID }}
           certificate-password: ${{ secrets.IOS_CERTIFICATE_PASSWORD }}
-          workspace-path: ios/ci_cd.xcworkspace
-          scheme: ci_cd
+          workspace-path: ios/Khawla.xcworkspace
+          scheme: Khawla
 
       - name: 'Upload app to TestFlight'
         uses: apple-actions/upload-testflight-build@v1
