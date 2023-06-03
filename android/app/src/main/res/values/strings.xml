@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Khawla</string>
+    <string name="facebook_app_id">920873488331875</string>
+<string name="fb_login_protocol_scheme">fb920873488331875</string>
+</resources>
