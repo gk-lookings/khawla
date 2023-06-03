@@ -54,18 +54,18 @@ target 'Khawla' do
     use_native_modules!
   end
 
-  target 'Khawla-tvOS' do
-    # Pods for Khawla-tvOS
+  # target 'Khawla-tvOS' do
+  #   # Pods for Khawla-tvOS
 
-    target 'Khawla-tvOSTests' do
-      inherit! :search_paths
-      # Pods for testing
+  #   target 'Khawla-tvOSTests' do
+  #     inherit! :search_paths
+  #     # Pods for testing
 
 
-        # Pods for testing
-    end
+  #       # Pods for testing
+  #   end
 
-  end
+  # end
   # add the Firebase pod for Google Analytics
   # add pods for any other desired Firebase products
   # https://firebase.google.com/docs/ios/setup#available-pods
