@@ -100,9 +100,7 @@ import HhCollection from "./eventDetail/components/HhCollection";
 import hhWorkDetails from "./eventDetail/components/hhWorkDetails";
 import kac from "./kac/components/kac";
 import PdfView from "./eventDetail/components/PdfView";
-import { connect, useSelector } from "react-redux";
 const { height, width } = Dimensions.get("screen");
-import { store } from "../common/store";
 
 const HomeStack = createStackNavigator(
   {
@@ -854,11 +852,7 @@ const AppStack = createStackNavigator(
   },
   {
     headerMode: "none",
-    // initialRouteName: store.getState().resetFirstLogin.isFirstLogin
-    //   ? "LanguageSelection"
-    //   : "Home",
     initialRouteName: "entry",
   }
 );
-
 export default createAppContainer(AppStack);

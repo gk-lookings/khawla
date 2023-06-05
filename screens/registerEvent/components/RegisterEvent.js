@@ -33,7 +33,6 @@ import AntDesign from "react-native-vector-icons/AntDesign";
 import CheckBox from "react-native-check-box";
 import { ScrollView } from "react-native-gesture-handler";
 import Modal from "react-native-modal";
-import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 const { height, width } = Dimensions.get("screen");
 
 class App extends Component {
@@ -85,16 +84,10 @@ class App extends Component {
       emailValidate: true,
       isChecked: false,
       designation: null,
-      discountCode: null,
       buyModel: false,
-      isLoaderSubmit: false,
-      username: "",
-      user: null,
-      discountLoader: false,
-      discountError: false,
-      discountApplied: false,
-      priceAED: null,
-      priceUSD: null,
+      isLoaderSubmit : false,
+      username:'',
+      user:null
     };
     this.onSend = this.onSend.bind(this);
     this.validate = this.validate.bind(this);
@@ -102,20 +95,19 @@ class App extends Component {
     this.buyNow = this.buyNow.bind(this);
   }
 
+
+
   componentDidMount() {
     this.props.navigation.setParams({ onPress: this.onPress });
-    this.setState({
-      language: this.props.lang,
-      user: this.props.user,
-      priceAED: this.state.eventDetail.priceAED,
-      priceUSD: this.state.eventDetail.priceUSD,
-    });
+    this.setState({ language: this.props.lang, user: this.props.user })
   }
   componentDidUpdate() {
     if (this.state.user != this.props.user) {
-      this.setState({ user: this.props.user });
+        this.setState({ user: this.props.user })
+        console.log('userr....', this.props.user)
+
     }
-  }
+}
   onPress() {
     this.props.navigation.navigate("EventDetail");
   }
@@ -214,27 +206,38 @@ class App extends Component {
       formData.append("document", this.state.singleFile);
       formData.append("document2", this.state.singleFile2);
       console.log("dataaaas", formData);
-      this.setState({ isLoaderSubmit: true });
+      this.setState({isLoaderSubmit : true})
       Api("post", REGISTRATION, formData).then((response) => {
         if (response.status == "success") {
           console.log(response),
-            this.setState({ isSend: false, isLoaderSubmit: false });
-          if (this.state.eventDetail.isPaid == 1) {
-            this.buyNow();
-          } else {
-            Alert.alert("Registered Successfully!!!", "", [
-              {
-                text: "Ok",
-                onPress: () => this.props.navigation.navigate("EventDetail"),
-              },
-            ]);
-          }
+            
+            this.setState({ isSend: false ,isLoaderSubmit:false});
+            if(this.state.eventDetail.isPaid==1){
+                this.buyNow()
+            }
+            else{
+
+                Alert.alert(
+                    "Registered Successfully!!!",
+                    "",
+                    [
+                        {
+                            text: "Ok", onPress: () => this.props.navigation.navigate("EventDetail")
+
+                        }
+                    ]
+                  );  
+            }
+            
+          
         } else {
-          this.setState({ isLoaderSubmit: false });
+          this.setState({ isLoaderSubmit:false})
           Alert.alert(
             "try again !",
-            "There was an error with your information"
+            "There was an error with your information",
+            
           );
+          
         }
       });
     }
@@ -255,41 +258,9 @@ class App extends Component {
         this.setState({
           buyModel: true,
         });
-        this.props.navigation.navigate("EventDetail", {
-          buyModel: true,
-          priceUSD: this.state.priceUSD,
-          priceAED: this.state.priceAED,
-        });
+        this.props.navigation.navigate('EventDetail',{buyModel:true})
       } else {
         this.setState({ buyLoading: false });
-      }
-    });
-  }
-
-  applyDiscount() {
-    this.setState({ discountLoader: true });
-    const productId = this.state.eventDetail.eventId;
-    let formData = new FormData();
-    formData.append("productId", productId);
-    formData.append("action", "couponApply");
-    formData.append("discountCode", this.state.discountCode);
-    Api("post", ADD_ORDER, formData).then((response) => {
-      this.setState({ discountLoader: false });
-      console.log("ressposeeee", response);
-      if (response.statusCode === 200) {
-        this.setState({
-          discountApplied: true,
-          priceAED: response.totalPriceAed,
-          priceUSD: response.totalPriceUSD,
-        });
-        setTimeout(() => {
-          this.setState({ discountApplied: false });
-        }, 1500);
-      } else {
-        this.setState({ discountError: true });
-        setTimeout(() => {
-          this.setState({ discountError: false });
-        }, 1500);
       }
     });
   }
@@ -310,55 +281,36 @@ class App extends Component {
       }
     }
   }
-
+  
   render() {
     const event = this.state.eventDetail;
-    const userDetails = this.state.user;
+    console.log("user....123",this.state.user)
+    const userDetails = this.state.user
     return (
       <SafeAreaView style={styles.mainContainer}>
-        <KeyboardAwareScrollView
-          keyboardShouldPersistTaps
-          style={styles.mainContainer}
-        >
+        <ScrollView style={styles.mainContainer}>
           <View>
             {/* <View style={styles.imageContainer}>
                                 <Image source={{uri: event.eventCover}} style={styles.image} resizeMode="contain"/>
                             </View> */}
-            <View style={{ alignSelf: "center" }}>
+            <View>
               <Text
                 style={[
                   styles.header,
-                  this.props.lang == "ar" && { textAlign: "center" },
+                  this.props.lang == "ar" && { textAlign: "right" },
                 ]}
               >
                 {event.title}
               </Text>
-              <Text style={styles.headerprice}>{this.state.priceAED} AED</Text>
-              <Text style={styles.headerprice}>{this.state.priceUSD} USD</Text>
+              <Text style={styles.headerprice}>Price : {event.priceAED} AED</Text>
+              <Text style={[styles.headerprice,{marginLeft:50}]}>:{event.priceUSD} USD</Text>
             </View>
             {/* <Text>{userDetails?.username}</Text> */}
             <View style={styles.registerContainer}>
-              <Text
-                style={[
-                  ,
-                  {
-                    color: SECONDARY_COLOR,
-                    fontSize: 16,
-                    marginLeft: 10,
-                    marginTop: 40,
-                  },
-                ]}
-              >
-                {userDetails?.username}
-              </Text>
-              <View
-                style={{
-                  height: 1,
-                  marginTop: 10,
-                  backgroundColor: "#DCDBDB",
-                  marginHorizontal: 10,
-                }}
-              />
+              <Text style={
+                  [,{color:SECONDARY_COLOR,fontSize:16,marginLeft:10,marginTop:40}]
+                }>{userDetails?.username}</Text>
+                <View style={{height:1,marginTop:10,backgroundColor:"#DCDBDB",marginHorizontal:10}}></View>
               {/* <TextField
                 // label={i18n.t("Name")}
                 label={userDetails?.username}
@@ -399,27 +351,10 @@ class App extends Component {
                     : { textAlign: "left" }
                 }
               />
-              <Text
-                style={[
-                  ,
-                  {
-                    color: SECONDARY_COLOR,
-                    fontSize: 16,
-                    marginLeft: 10,
-                    marginTop: 30,
-                  },
-                ]}
-              >
-                {userDetails?.email}
-              </Text>
-              <View
-                style={{
-                  height: 1,
-                  marginTop: 10,
-                  backgroundColor: "#DCDBDB",
-                  marginHorizontal: 10,
-                }}
-              />
+              <Text style={
+                  [,{color:SECONDARY_COLOR,fontSize:16,marginLeft:10,marginTop:30}]
+                }>{userDetails?.email}</Text>
+                <View style={{height:1,marginTop:10,backgroundColor:"#DCDBDB",marginHorizontal:10}}></View>
               {/* <TextField
                 // label={i18n.t("Email")}
                 label={userDetails?.email}
@@ -528,63 +463,20 @@ class App extends Component {
                   isChecked={this.state.isChecked}
                 />
               </View>
-              <View style={styles.discountView}>
-                <TextField
-                  label={i18n.t("Apply_Discount")}
-                  keyboardType="default"
-                  onSubmitEditing={this.onSubmit}
-                  tintColor={PRIMARY_COLOR}
-                  containerStyle={styles.textInputDiscount}
-                  onChangeText={(text) => this.setState({ discountCode: text })}
-                  style={
-                    this.props.lang == "ar"
-                      ? { textAlign: "right" }
-                      : { textAlign: "left" }
-                  }
-                />
-                <TouchableOpacity
-                  onPress={() => this.applyDiscount()}
-                  style={[
-                    styles.applyButton,
-                    !this.state.discountCode && { backgroundColor: "grey" },
-                  ]}
-                  disabled={!this.state.discountCode}
-                >
-                  <View>
-                    {!this.state.discountLoader ? (
-                      <Text style={styles.applytext}>Apply</Text>
-                    ) : (
-                      <ActivityIndicator
-                        size={"small"}
-                        color={"#fff"}
-                        style={{ paddingVertical: 2 }}
-                      />
-                    )}
-                  </View>
-                </TouchableOpacity>
-              </View>
-              {this.state.discountApplied && (
-                <Text style={[styles.validateText, { color: "green" }]}>
-                  Code Applied Successfully
-                </Text>
-              )}
-              {this.state.discountError && (
-                <Text style={styles.validateText}>Code not valid !</Text>
-              )}
               {this.state.validate ? (
                 <Text style={styles.validateText}>{this.state.validate}</Text>
               ) : (
                 <Text />
               )}
-              <TouchableOpacity onPress={this.onSend} style={styles.submitBox}>
+              <TouchableOpacity onPress={this.onSend} style={styles.submitBox} >
                 <Text style={styles.submitText}>{i18n.t("Submit")}</Text>
-                {this.state.isLoaderSubmit && (
-                  <ActivityIndicator size={"small"} />
-                )}
+                {this.state.isLoaderSubmit && <ActivityIndicator size={"small"}></ActivityIndicator>}
               </TouchableOpacity>
             </View>
+           
           </View>
-        </KeyboardAwareScrollView>
+         
+        </ScrollView>
       </SafeAreaView>
     );
   }
@@ -592,7 +484,7 @@ class App extends Component {
 
 const mapStateToProps = (state) => ({
   lang: state.programmes.lang,
-  user: state.userLogin.user,
+  user: state.userLogin.user
 });
 const styles = StyleSheet.create({
   mainContainer: {
@@ -615,18 +507,16 @@ const styles = StyleSheet.create({
   },
   header: {
     fontSize: 20,
-    textAlign: "center",
+    textAlign: "left",
     fontFamily: FONT_MULI_BOLD,
     padding: 10,
-    color: PRIMARY_COLOR,
-    paddingBottom: 0,
+    color:PRIMARY_COLOR
   },
-  headerprice: {
+  headerprice:{
     fontSize: 16,
-    fontFamily: FONT_MULI_BOLD,
-    marginLeft: 12,
-    marginTop: -10,
-    textAlign: "center",
+    fontFamily:FONT_MULI_REGULAR,
+    marginLeft:12,
+    marginTop:-10
   },
   registerContainer: {
     backgroundColor: "#fff",
@@ -667,7 +557,7 @@ const styles = StyleSheet.create({
     borderRadius: 25,
     margin: 20,
     marginTop: 10,
-    flexDirection: "row",
+    flexDirection:"row"
   },
   submitText: {
     color: "#fff",
@@ -730,32 +620,6 @@ const styles = StyleSheet.create({
     color: COLOR_SECONDARY,
     marginRight: 5,
     fontFamily: FONT_LIGHT,
-  },
-  applyButton: {
-    paddingVertical: 2,
-    borderRadius: 30,
-    backgroundColor: PRIMARY_COLOR,
-    width: 80,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  applytext: {
-    fontFamily: FONT_MULI_BOLD,
-    fontSize: 15,
-    color: "#fff",
-  },
-  discountView: {
-    flexDirection: "row",
-    alignItems: "center",
-    height: 50,
-    marginTop: 20,
-  },
-  textInputDiscount: {
-    marginLeft: 10,
-    marginRight: 10,
-    width: width - 145,
-    height: 50,
-    justifyContent: "flex-end",
   },
 });
 export default connect(mapStateToProps)(App);

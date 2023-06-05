@@ -1,0 +1,528 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="org.evillage.khawlafoundation"
+4    android:versionCode="52"
+5    android:versionName="1.2" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="31" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/debug/AndroidManifest.xml:5:5-77
+11-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/debug/AndroidManifest.xml:5:22-75
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:6:5-67
+12-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+13-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:7:6-82
+13-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:7:23-79
+14    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+14-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:8:9-83
+14-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:8:26-80
+15
+16    <uses-feature android:name="android.hardware.location.gps" />
+16-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:9:9-69
+16-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:9:23-67
+17
+18    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+18-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:10:9-83
+18-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:10:26-81
+19    <uses-permission android:name="android.permission.WAKE_LOCK" />
+19-->[:react-native-firebase] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-firebase/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-68
+19-->[:react-native-firebase] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-firebase/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-65
+20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+20-->[:react-native-firebase] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-firebase/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-79
+20-->[:react-native-firebase] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-firebase/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-76
+21    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+21-->[com.google.firebase:firebase-analytics:15.0.2] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/878c0665816c325022d0645110c2c312/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:26:5-110
+21-->[com.google.firebase:firebase-analytics:15.0.2] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/878c0665816c325022d0645110c2c312/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:26:22-107
+22    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- Required to access Google Play Licensing -->
+22-->[:react-native-image-crop-picker] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-81
+22-->[:react-native-image-crop-picker] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-78
+23    <uses-permission android:name="com.android.vending.CHECK_LICENSE" /> <!-- Required to check whether Wi-Fi is enabled -->
+23-->[:rn-fetch-blob] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-73
+23-->[:rn-fetch-blob] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-70
+24    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+24-->[:rn-fetch-blob] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:28:5-76
+24-->[:rn-fetch-blob] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:28:22-73
+25    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+25-->[com.google.android.gms:play-services-iid:17.0.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/6acf4dee3cdb66d981d4f4e03318d9a6/jetified-play-services-iid-17.0.0/AndroidManifest.xml:23:5-82
+25-->[com.google.android.gms:play-services-iid:17.0.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/6acf4dee3cdb66d981d4f4e03318d9a6/jetified-play-services-iid-17.0.0/AndroidManifest.xml:23:22-79
+26
+27    <uses-feature
+27-->[com.google.android.gms:play-services-maps:16.1.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/56dabc7ee2c18604fcd70714254a92de/jetified-play-services-maps-16.1.0/AndroidManifest.xml:26:5-28:35
+28        android:glEsVersion="0x00020000"
+28-->[com.google.android.gms:play-services-maps:16.1.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/56dabc7ee2c18604fcd70714254a92de/jetified-play-services-maps-16.1.0/AndroidManifest.xml:27:9-41
+29        android:required="true" />
+29-->[com.google.android.gms:play-services-maps:16.1.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/56dabc7ee2c18604fcd70714254a92de/jetified-play-services-maps-16.1.0/AndroidManifest.xml:28:9-32
+30
+31    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+32
+33    <application
+33-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:11:5-63:19
+34        android:name="org.evillage.khawlafoundation.MainApplication"
+34-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:12:7-38
+35        android:allowBackup="false"
+35-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:16:7-34
+36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+36-->[androidx.core:core:1.1.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/33e044325492eec20cd95ab1418e8466/core-1.1.0/AndroidManifest.xml:24:18-86
+37        android:debuggable="true"
+38        android:icon="@mipmap/ic_launcher"
+38-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:14:7-41
+39        android:label="@string/app_name"
+39-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:13:7-39
+40        android:roundIcon="@mipmap/ic_launcher_round"
+40-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:15:7-52
+41        android:supportsRtl="true"
+41-->[com.facebook.android:facebook-android-sdk:5.15.3] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/b1468b936746294b7ebd6ded302db24a/jetified-facebook-android-sdk-5.15.3/AndroidManifest.xml:28:18-44
+42        android:testOnly="true"
+43        android:theme="@style/AppTheme"
+43-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:17:7-38
+44        android:usesCleartextTraffic="true" >
+44-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:18:7-42
+45        <activity
+45-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:21:7-32:18
+46            android:name="org.evillage.khawlafoundation.MainActivity"
+46-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:22:9-37
+47            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+47-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:25:9-79
+48            android:exported="true"
+48-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:23:9-32
+49            android:label="@string/app_name"
+49-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:24:9-41
+50            android:screenOrientation="portrait"
+50-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:27:9-45
+51            android:windowSoftInputMode="adjustResize" >
+51-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:26:9-51
+52            <intent-filter>
+52-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:28:9-31:25
+53                <action android:name="android.intent.action.MAIN" />
+53-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:29:13-65
+53-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:29:21-62
+54
+55                <category android:name="android.intent.category.LAUNCHER" />
+55-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:30:13-73
+55-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:30:23-70
+56            </intent-filter>
+57        </activity>
+58        <activity
+58-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:33:7-34:100
+59            android:name="com.facebook.react.devsupport.DevSettingsActivity"
+59-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:34:33-97
+60            android:exported="true" />
+60-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:34:9-32
+61
+62        <meta-data
+62-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:35:10-37:63
+63            android:name="com.google.android.geo.API_KEY"
+63-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:36:6-51
+64            android:value="AIzaSyDrujuR79TWAJWcGSBakZBuQNYsdpD78YA" />
+64-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:37:6-61
+65        <!--
+66 <service
+67    android:name=".java.MyFirebaseMessagingService"
+68    android:exported="false">
+69    <intent-filter>
+70        <action android:name="com.google.firebase.MESSAGING_EVENT" />
+71    </intent-filter>
+72</service>
+73        -->
+74        <meta-data
+74-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:45:9-46:58
+75            android:name="com.facebook.sdk.ApplicationId"
+75-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:45:20-65
+76            android:value="@string/facebook_app_id" />
+76-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:46:17-56
+77
+78        <activity
+78-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:48:13-52:52
+79            android:name="com.facebook.FacebookActivity"
+79-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:49:33-77
+80            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+80-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:50:17-125
+81            android:exported="true"
+81-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:49:9-32
+82            android:label="@string/app_name"
+82-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:52:17-49
+83            android:theme="@style/com_facebook_activity_theme" />
+83-->[com.facebook.android:facebook-common:5.15.3] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/e564001fbce19f8d5b25d3e1f8cf9896/jetified-facebook-common-5.15.3/AndroidManifest.xml:33:13-63
+84        <activity
+84-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:53:13-62:24
+85            android:name="com.facebook.CustomTabActivity"
+85-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:54:17-62
+86            android:exported="true" >
+86-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:55:17-40
+87            <intent-filter>
+87-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:56:17-61:33
+88                <action android:name="android.intent.action.VIEW" />
+88-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:57:21-73
+88-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:57:29-70
+89
+90                <category android:name="android.intent.category.DEFAULT" />
+90-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:58:21-80
+90-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:58:31-77
+91                <category android:name="android.intent.category.BROWSABLE" />
+91-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:59:21-82
+91-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:59:31-79
+92
+93                <data android:scheme="@string/fb_login_protocol_scheme" />
+93-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:60:21-79
+93-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:60:27-76
+94            </intent-filter>
+95            <intent-filter>
+95-->[com.facebook.android:facebook-common:5.15.3] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/e564001fbce19f8d5b25d3e1f8cf9896/jetified-facebook-common-5.15.3/AndroidManifest.xml:39:13-48:29
+96                <action android:name="android.intent.action.VIEW" />
+96-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:57:21-73
+96-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:57:29-70
+97
+98                <category android:name="android.intent.category.DEFAULT" />
+98-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:58:21-80
+98-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:58:31-77
+99                <category android:name="android.intent.category.BROWSABLE" />
+99-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:59:21-82
+99-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:59:31-79
+100
+101                <data
+101-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:60:21-79
+102                    android:host="cct.org.evillage.khawlafoundation"
+103                    android:scheme="fbconnect" />
+103-->/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/src/main/AndroidManifest.xml:60:27-76
+104            </intent-filter>
+105        </activity>
+106
+107        <service
+107-->[:react-native-firebase] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-firebase/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:14:9-18:19
+108            android:name="com.google.firebase.components.ComponentDiscoveryService"
+108-->[:react-native-firebase] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-firebase/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:14:18-89
+109            android:directBootAware="true"
+109-->[com.google.firebase:firebase-common:19.3.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/10411a895c22ffb12ead6590f366c3ec/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
+110            android:exported="false" >
+110-->[com.google.firebase:firebase-messaging:20.1.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/99b7f0485848eb7b87b508ce43e12445/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:37:13-37
+111            <meta-data
+111-->[:react-native-firebase] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-firebase/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:85
+112                android:name="com.google.firebase.components:io.invertase.firebase.ReactNativeFirebaseAppRegistrar"
+112-->[:react-native-firebase] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-firebase/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-116
+113                android:value="com.google.firebase.components.ComponentRegistrar" />
+113-->[:react-native-firebase] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-firebase/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-82
+114            <meta-data
+114-->[com.google.firebase:firebase-measurement-connector-impl:15.0.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/236b164b9b49f1a03b7660f362e3be04/jetified-firebase-measurement-connector-impl-15.0.0/AndroidManifest.xml:28:13-30:85
+115                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+115-->[com.google.firebase:firebase-measurement-connector-impl:15.0.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/236b164b9b49f1a03b7660f362e3be04/jetified-firebase-measurement-connector-impl-15.0.0/AndroidManifest.xml:29:17-139
+116                android:value="com.google.firebase.components.ComponentRegistrar" />
+116-->[com.google.firebase:firebase-measurement-connector-impl:15.0.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/236b164b9b49f1a03b7660f362e3be04/jetified-firebase-measurement-connector-impl-15.0.0/AndroidManifest.xml:30:17-82
+117            <meta-data
+117-->[com.google.firebase:firebase-messaging:20.1.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/99b7f0485848eb7b87b508ce43e12445/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:38:13-40:85
+118                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+118-->[com.google.firebase:firebase-messaging:20.1.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/99b7f0485848eb7b87b508ce43e12445/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:39:17-119
+119                android:value="com.google.firebase.components.ComponentRegistrar" />
+119-->[com.google.firebase:firebase-messaging:20.1.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/99b7f0485848eb7b87b508ce43e12445/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:40:17-82
+120            <meta-data
+120-->[com.google.firebase:firebase-iid:20.0.2] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/1275bb574b4d4cf089d6b59f98810ba9/jetified-firebase-iid-20.0.2/AndroidManifest.xml:32:13-34:85
+121                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+121-->[com.google.firebase:firebase-iid:20.0.2] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/1275bb574b4d4cf089d6b59f98810ba9/jetified-firebase-iid-20.0.2/AndroidManifest.xml:33:17-96
+122                android:value="com.google.firebase.components.ComponentRegistrar" />
+122-->[com.google.firebase:firebase-iid:20.0.2] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/1275bb574b4d4cf089d6b59f98810ba9/jetified-firebase-iid-20.0.2/AndroidManifest.xml:34:17-82
+123            <meta-data
+123-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/fec9089009e03c71b49866c9b9a4ddbb/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:28:13-30:85
+124                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+124-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/fec9089009e03c71b49866c9b9a4ddbb/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:29:17-115
+125                android:value="com.google.firebase.components.ComponentRegistrar" />
+125-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/fec9089009e03c71b49866c9b9a4ddbb/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:30:17-82
+126        </service>
+127
+128        <receiver
+128-->[com.google.firebase:firebase-analytics:15.0.2] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/878c0665816c325022d0645110c2c312/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:29:9-33:20
+129            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+129-->[com.google.firebase:firebase-analytics:15.0.2] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/878c0665816c325022d0645110c2c312/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:30:13-85
+130            android:enabled="true"
+130-->[com.google.firebase:firebase-analytics:15.0.2] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/878c0665816c325022d0645110c2c312/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:31:13-35
+131            android:exported="false" >
+131-->[com.google.firebase:firebase-analytics:15.0.2] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/878c0665816c325022d0645110c2c312/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:32:13-37
+132        </receiver>
+133        <receiver
+133-->[com.google.firebase:firebase-analytics:15.0.2] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/878c0665816c325022d0645110c2c312/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:34:9-42:20
+134            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+134-->[com.google.firebase:firebase-analytics:15.0.2] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/878c0665816c325022d0645110c2c312/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:35:13-100
+135            android:enabled="true"
+135-->[com.google.firebase:firebase-analytics:15.0.2] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/878c0665816c325022d0645110c2c312/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:36:13-35
+136            android:exported="true"
+136-->[com.google.firebase:firebase-analytics:15.0.2] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/878c0665816c325022d0645110c2c312/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:37:13-36
+137            android:permission="android.permission.INSTALL_PACKAGES" >
+137-->[com.google.firebase:firebase-analytics:15.0.2] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/878c0665816c325022d0645110c2c312/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:38:13-69
+138            <intent-filter>
+138-->[com.google.firebase:firebase-analytics:15.0.2] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/878c0665816c325022d0645110c2c312/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:39:13-41:29
+139                <action android:name="com.android.vending.INSTALL_REFERRER" />
+139-->[com.google.firebase:firebase-analytics:15.0.2] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/878c0665816c325022d0645110c2c312/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:40:17-79
+139-->[com.google.firebase:firebase-analytics:15.0.2] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/878c0665816c325022d0645110c2c312/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:40:25-76
+140            </intent-filter>
+141        </receiver>
+142
+143        <service
+143-->[com.google.firebase:firebase-analytics:15.0.2] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/878c0665816c325022d0645110c2c312/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:44:9-47:40
+144            android:name="com.google.android.gms.measurement.AppMeasurementService"
+144-->[com.google.firebase:firebase-analytics:15.0.2] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/878c0665816c325022d0645110c2c312/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:45:13-84
+145            android:enabled="true"
+145-->[com.google.firebase:firebase-analytics:15.0.2] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/878c0665816c325022d0645110c2c312/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:46:13-35
+146            android:exported="false" />
+146-->[com.google.firebase:firebase-analytics:15.0.2] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/878c0665816c325022d0645110c2c312/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:47:13-37
+147        <service
+147-->[com.google.firebase:firebase-analytics:15.0.2] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/878c0665816c325022d0645110c2c312/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:48:9-52:72
+148            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+148-->[com.google.firebase:firebase-analytics:15.0.2] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/878c0665816c325022d0645110c2c312/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:49:13-87
+149            android:enabled="true"
+149-->[com.google.firebase:firebase-analytics:15.0.2] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/878c0665816c325022d0645110c2c312/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:50:13-35
+150            android:exported="false"
+150-->[com.google.firebase:firebase-analytics:15.0.2] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/878c0665816c325022d0645110c2c312/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:51:13-37
+151            android:permission="android.permission.BIND_JOB_SERVICE" />
+151-->[com.google.firebase:firebase-analytics:15.0.2] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/878c0665816c325022d0645110c2c312/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:52:13-69
+152
+153        <receiver
+153-->[:react-native-device-info] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-device-info/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-17:20
+154            android:name="com.learnium.RNDeviceInfo.RNDeviceReceiver"
+154-->[:react-native-device-info] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-device-info/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-70
+155            android:enabled="true"
+155-->[:react-native-device-info] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-device-info/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-35
+156            android:exported="true" >
+156-->[:react-native-device-info] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-device-info/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-36
+157            <intent-filter>
+157-->[com.google.firebase:firebase-analytics:15.0.2] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/878c0665816c325022d0645110c2c312/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:39:13-41:29
+158                <action android:name="com.android.vending.INSTALL_REFERRER" />
+158-->[com.google.firebase:firebase-analytics:15.0.2] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/878c0665816c325022d0645110c2c312/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:40:17-79
+158-->[com.google.firebase:firebase-analytics:15.0.2] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/878c0665816c325022d0645110c2c312/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:40:25-76
+159            </intent-filter>
+160        </receiver>
+161
+162        <provider
+162-->[:react-native-image-crop-picker] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:9-20:20
+163            android:name="androidx.core.content.FileProvider"
+163-->[:react-native-image-crop-picker] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-62
+164            android:authorities="org.evillage.khawlafoundation.provider"
+164-->[:react-native-image-crop-picker] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-60
+165            android:exported="false"
+165-->[:react-native-image-crop-picker] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-37
+166            android:grantUriPermissions="true" >
+166-->[:react-native-image-crop-picker] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-47
+167            <meta-data
+167-->[:react-native-image-crop-picker] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-19:58
+168                android:name="android.support.FILE_PROVIDER_PATHS"
+168-->[:react-native-image-crop-picker] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:17-67
+169                android:resource="@xml/provider_paths" />
+169-->[:react-native-image-crop-picker] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:19:17-55
+170        </provider>
+171
+172        <activity
+172-->[:react-native-image-crop-picker] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:22:9-24:72
+173            android:name="com.yalantis.ucrop.UCropActivity"
+173-->[:react-native-image-crop-picker] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-60
+174            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+174-->[:react-native-image-crop-picker] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-69
+175
+176        <provider
+176-->[:react-native-image-picker] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-18:20
+177            android:name="com.imagepicker.FileProvider"
+177-->[:react-native-image-picker] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-56
+178            android:authorities="org.evillage.khawlafoundation.provider"
+178-->[:react-native-image-picker] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-60
+179            android:exported="false"
+179-->[:react-native-image-picker] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
+180            android:grantUriPermissions="true" >
+180-->[:react-native-image-picker] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-47
+181            <meta-data
+181-->[:react-native-image-crop-picker] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-19:58
+182                android:name="android.support.FILE_PROVIDER_PATHS"
+182-->[:react-native-image-crop-picker] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:17-67
+183                android:resource="@xml/provider_paths" />
+183-->[:react-native-image-crop-picker] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:19:17-55
+184        </provider>
+185        <provider
+185-->[:react-native-webview] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-18:20
+186            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+186-->[:react-native-webview] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-83
+187            android:authorities="org.evillage.khawlafoundation.fileprovider"
+187-->[:react-native-webview] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-64
+188            android:exported="false"
+188-->[:react-native-webview] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
+189            android:grantUriPermissions="true" >
+189-->[:react-native-webview] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-47
+190            <meta-data
+190-->[:react-native-image-crop-picker] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-19:58
+191                android:name="android.support.FILE_PROVIDER_PATHS"
+191-->[:react-native-image-crop-picker] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:17-67
+192                android:resource="@xml/file_provider_paths" />
+192-->[:react-native-image-crop-picker] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:19:17-55
+193        </provider>
+194        <provider
+194-->[:rn-fetch-blob] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:34:9-42:20
+195            android:name="com.RNFetchBlob.Utils.FileProvider"
+195-->[:rn-fetch-blob] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:35:13-62
+196            android:authorities="org.evillage.khawlafoundation.provider"
+196-->[:rn-fetch-blob] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:36:13-60
+197            android:exported="false"
+197-->[:rn-fetch-blob] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:37:13-37
+198            android:grantUriPermissions="true" >
+198-->[:rn-fetch-blob] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:38:13-47
+199            <meta-data
+199-->[:react-native-image-crop-picker] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-19:58
+200                android:name="android.support.FILE_PROVIDER_PATHS"
+200-->[:react-native-image-crop-picker] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:17-67
+201                android:resource="@xml/provider_paths" />
+201-->[:react-native-image-crop-picker] /Users/hemandp/Desktop/Projects/khawla/khawla/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:19:17-55
+202        </provider>
+203
+204        <activity
+204-->[com.google.android.gms:play-services-auth:16.0.1] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/a5fd1826247a242a90ccbb24bb842e8d/jetified-play-services-auth-16.0.1/AndroidManifest.xml:23:9-27:75
+205            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+205-->[com.google.android.gms:play-services-auth:16.0.1] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/a5fd1826247a242a90ccbb24bb842e8d/jetified-play-services-auth-16.0.1/AndroidManifest.xml:24:13-93
+206            android:excludeFromRecents="true"
+206-->[com.google.android.gms:play-services-auth:16.0.1] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/a5fd1826247a242a90ccbb24bb842e8d/jetified-play-services-auth-16.0.1/AndroidManifest.xml:25:13-46
+207            android:exported="false"
+207-->[com.google.android.gms:play-services-auth:16.0.1] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/a5fd1826247a242a90ccbb24bb842e8d/jetified-play-services-auth-16.0.1/AndroidManifest.xml:26:13-37
+208            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+208-->[com.google.android.gms:play-services-auth:16.0.1] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/a5fd1826247a242a90ccbb24bb842e8d/jetified-play-services-auth-16.0.1/AndroidManifest.xml:27:13-72
+209        <!--
+210            Service handling Google Sign-In user revocation. For apps that do not integrate with
+211            Google Sign-In, this service will never be started.
+212        -->
+213        <service
+213-->[com.google.android.gms:play-services-auth:16.0.1] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/a5fd1826247a242a90ccbb24bb842e8d/jetified-play-services-auth-16.0.1/AndroidManifest.xml:33:9-36:110
+214            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+214-->[com.google.android.gms:play-services-auth:16.0.1] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/a5fd1826247a242a90ccbb24bb842e8d/jetified-play-services-auth-16.0.1/AndroidManifest.xml:34:13-89
+215            android:exported="true"
+215-->[com.google.android.gms:play-services-auth:16.0.1] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/a5fd1826247a242a90ccbb24bb842e8d/jetified-play-services-auth-16.0.1/AndroidManifest.xml:35:13-36
+216            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" /> <!-- Needs to be explicitly declared on P+ -->
+216-->[com.google.android.gms:play-services-auth:16.0.1] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/a5fd1826247a242a90ccbb24bb842e8d/jetified-play-services-auth-16.0.1/AndroidManifest.xml:36:13-107
+217        <uses-library
+217-->[com.google.android.gms:play-services-maps:16.1.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/56dabc7ee2c18604fcd70714254a92de/jetified-play-services-maps-16.1.0/AndroidManifest.xml:33:9-35:40
+218            android:name="org.apache.http.legacy"
+218-->[com.google.android.gms:play-services-maps:16.1.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/56dabc7ee2c18604fcd70714254a92de/jetified-play-services-maps-16.1.0/AndroidManifest.xml:34:13-50
+219            android:required="false" />
+219-->[com.google.android.gms:play-services-maps:16.1.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/56dabc7ee2c18604fcd70714254a92de/jetified-play-services-maps-16.1.0/AndroidManifest.xml:35:13-37
+220        <!--
+221             FirebaseMessagingService performs security checks at runtime,
+222             but set to not exported to explicitly avoid allowing another app to call it.
+223        -->
+224        <service
+224-->[com.google.firebase:firebase-messaging:20.1.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/99b7f0485848eb7b87b508ce43e12445/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:28:9-34:19
+225            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+225-->[com.google.firebase:firebase-messaging:20.1.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/99b7f0485848eb7b87b508ce43e12445/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:29:13-82
+226            android:exported="false" >
+226-->[com.google.firebase:firebase-messaging:20.1.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/99b7f0485848eb7b87b508ce43e12445/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:30:13-37
+227            <intent-filter android:priority="-500" >
+227-->[com.google.firebase:firebase-messaging:20.1.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/99b7f0485848eb7b87b508ce43e12445/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:31:13-33:29
+227-->[com.google.firebase:firebase-messaging:20.1.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/99b7f0485848eb7b87b508ce43e12445/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:31:28-51
+228                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+228-->[com.google.firebase:firebase-messaging:20.1.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/99b7f0485848eb7b87b508ce43e12445/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:32:17-78
+228-->[com.google.firebase:firebase-messaging:20.1.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/99b7f0485848eb7b87b508ce43e12445/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:32:25-75
+229            </intent-filter>
+230        </service>
+231
+232        <receiver
+232-->[com.google.firebase:firebase-iid:20.0.2] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/1275bb574b4d4cf089d6b59f98810ba9/jetified-firebase-iid-20.0.2/AndroidManifest.xml:37:9-44:20
+233            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+233-->[com.google.firebase:firebase-iid:20.0.2] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/1275bb574b4d4cf089d6b59f98810ba9/jetified-firebase-iid-20.0.2/AndroidManifest.xml:38:13-78
+234            android:exported="true"
+234-->[com.google.firebase:firebase-iid:20.0.2] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/1275bb574b4d4cf089d6b59f98810ba9/jetified-firebase-iid-20.0.2/AndroidManifest.xml:39:13-36
+235            android:permission="com.google.android.c2dm.permission.SEND" >
+235-->[com.google.firebase:firebase-iid:20.0.2] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/1275bb574b4d4cf089d6b59f98810ba9/jetified-firebase-iid-20.0.2/AndroidManifest.xml:40:13-73
+236            <intent-filter>
+236-->[com.google.firebase:firebase-iid:20.0.2] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/1275bb574b4d4cf089d6b59f98810ba9/jetified-firebase-iid-20.0.2/AndroidManifest.xml:41:13-43:29
+237                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+237-->[com.google.firebase:firebase-iid:20.0.2] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/1275bb574b4d4cf089d6b59f98810ba9/jetified-firebase-iid-20.0.2/AndroidManifest.xml:42:17-81
+237-->[com.google.firebase:firebase-iid:20.0.2] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/1275bb574b4d4cf089d6b59f98810ba9/jetified-firebase-iid-20.0.2/AndroidManifest.xml:42:25-78
+238            </intent-filter>
+239        </receiver>
+240
+241        <activity
+241-->[com.google.android.gms:play-services-base:17.0.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/0a565d637f623c0f419ab0d625508fb3/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+242            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+242-->[com.google.android.gms:play-services-base:17.0.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/0a565d637f623c0f419ab0d625508fb3/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+243            android:exported="false"
+243-->[com.google.android.gms:play-services-base:17.0.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/0a565d637f623c0f419ab0d625508fb3/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+244            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+244-->[com.google.android.gms:play-services-base:17.0.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/0a565d637f623c0f419ab0d625508fb3/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+245        <activity android:name="com.facebook.CustomTabMainActivity" />
+245-->[com.facebook.android:facebook-common:5.15.3] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/e564001fbce19f8d5b25d3e1f8cf9896/jetified-facebook-common-5.15.3/AndroidManifest.xml:34:9-71
+245-->[com.facebook.android:facebook-common:5.15.3] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/e564001fbce19f8d5b25d3e1f8cf9896/jetified-facebook-common-5.15.3/AndroidManifest.xml:34:19-68
+246
+247        <provider
+247-->[com.google.firebase:firebase-common:19.3.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/10411a895c22ffb12ead6590f366c3ec/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
+248            android:name="com.google.firebase.provider.FirebaseInitProvider"
+248-->[com.google.firebase:firebase-common:19.3.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/10411a895c22ffb12ead6590f366c3ec/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
+249            android:authorities="org.evillage.khawlafoundation.firebaseinitprovider"
+249-->[com.google.firebase:firebase-common:19.3.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/10411a895c22ffb12ead6590f366c3ec/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
+250            android:exported="false"
+250-->[com.google.firebase:firebase-common:19.3.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/10411a895c22ffb12ead6590f366c3ec/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
+251            android:initOrder="100" />
+251-->[com.google.firebase:firebase-common:19.3.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/10411a895c22ffb12ead6590f366c3ec/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
+252
+253        <meta-data
+253-->[com.google.android.gms:play-services-basement:17.0.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/ff9498be8842d6fe2b795afbd4cab2ea/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+254            android:name="com.google.android.gms.version"
+254-->[com.google.android.gms:play-services-basement:17.0.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/ff9498be8842d6fe2b795afbd4cab2ea/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+255            android:value="@integer/google_play_services_version" />
+255-->[com.google.android.gms:play-services-basement:17.0.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/ff9498be8842d6fe2b795afbd4cab2ea/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+256
+257        <service
+257-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/8e6c28ca234438a5d6ea4a7d0ed97357/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:29:9-35:19
+258            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+258-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/8e6c28ca234438a5d6ea4a7d0ed97357/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:30:13-103
+259            android:exported="false" >
+259-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/8e6c28ca234438a5d6ea4a7d0ed97357/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:31:13-37
+260            <meta-data
+260-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/8e6c28ca234438a5d6ea4a7d0ed97357/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:32:13-34:39
+261                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+261-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/8e6c28ca234438a5d6ea4a7d0ed97357/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:33:17-94
+262                android:value="cct" />
+262-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/8e6c28ca234438a5d6ea4a7d0ed97357/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:34:17-36
+263        </service>
+264        <service
+264-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/3dc081757b517bd9f83a65b288fd05c4/jetified-transport-runtime-2.2.0/AndroidManifest.xml:26:9-30:19
+265            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+265-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/3dc081757b517bd9f83a65b288fd05c4/jetified-transport-runtime-2.2.0/AndroidManifest.xml:27:13-117
+266            android:exported="false"
+266-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/3dc081757b517bd9f83a65b288fd05c4/jetified-transport-runtime-2.2.0/AndroidManifest.xml:28:13-37
+267            android:permission="android.permission.BIND_JOB_SERVICE" >
+267-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/3dc081757b517bd9f83a65b288fd05c4/jetified-transport-runtime-2.2.0/AndroidManifest.xml:29:13-69
+268        </service>
+269
+270        <receiver
+270-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/3dc081757b517bd9f83a65b288fd05c4/jetified-transport-runtime-2.2.0/AndroidManifest.xml:32:9-34:40
+271            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+271-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/3dc081757b517bd9f83a65b288fd05c4/jetified-transport-runtime-2.2.0/AndroidManifest.xml:33:13-132
+272            android:exported="false" />
+272-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/3dc081757b517bd9f83a65b288fd05c4/jetified-transport-runtime-2.2.0/AndroidManifest.xml:34:13-37
+273        <!--
+274         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+275         with the application context. This config is merged in with the host app's manifest,
+276         but there can only be one provider with the same authority activated at any given
+277         point; so if the end user has two or more different apps that use Facebook SDK, only the
+278         first one will be able to use the provider. To work around this problem, we use the
+279         following placeholder in the authority to identify each host application as if it was
+280         a completely different provider.
+281        -->
+282        <provider
+282-->[com.facebook.android:facebook-core:5.15.3] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/b7aee03cce04e1918c97a48d6fb0d769/jetified-facebook-core-5.15.3/AndroidManifest.xml:39:9-42:40
+283            android:name="com.facebook.internal.FacebookInitProvider"
+283-->[com.facebook.android:facebook-core:5.15.3] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/b7aee03cce04e1918c97a48d6fb0d769/jetified-facebook-core-5.15.3/AndroidManifest.xml:40:13-70
+284            android:authorities="org.evillage.khawlafoundation.FacebookInitProvider"
+284-->[com.facebook.android:facebook-core:5.15.3] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/b7aee03cce04e1918c97a48d6fb0d769/jetified-facebook-core-5.15.3/AndroidManifest.xml:41:13-72
+285            android:exported="false" />
+285-->[com.facebook.android:facebook-core:5.15.3] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/b7aee03cce04e1918c97a48d6fb0d769/jetified-facebook-core-5.15.3/AndroidManifest.xml:42:13-37
+286
+287        <receiver
+287-->[com.facebook.android:facebook-core:5.15.3] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/b7aee03cce04e1918c97a48d6fb0d769/jetified-facebook-core-5.15.3/AndroidManifest.xml:44:9-50:20
+288            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+288-->[com.facebook.android:facebook-core:5.15.3] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/b7aee03cce04e1918c97a48d6fb0d769/jetified-facebook-core-5.15.3/AndroidManifest.xml:45:13-86
+289            android:exported="false" >
+289-->[com.facebook.android:facebook-core:5.15.3] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/b7aee03cce04e1918c97a48d6fb0d769/jetified-facebook-core-5.15.3/AndroidManifest.xml:46:13-37
+290            <intent-filter>
+290-->[com.facebook.android:facebook-core:5.15.3] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/b7aee03cce04e1918c97a48d6fb0d769/jetified-facebook-core-5.15.3/AndroidManifest.xml:47:13-49:29
+291                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+291-->[com.facebook.android:facebook-core:5.15.3] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/b7aee03cce04e1918c97a48d6fb0d769/jetified-facebook-core-5.15.3/AndroidManifest.xml:48:17-95
+291-->[com.facebook.android:facebook-core:5.15.3] /Users/hemandp/.gradle/caches/transforms-2/files-2.1/b7aee03cce04e1918c97a48d6fb0d769/jetified-facebook-core-5.15.3/AndroidManifest.xml:48:25-92
+292            </intent-filter>
+293        </receiver>
+294    </application>
+295
+296</manifest>

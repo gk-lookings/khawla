@@ -664,7 +664,7 @@ class App extends Component {
   createOrder() {
     let productId = this.state.eventDetails.eventId;
     let productName = this.state.eventDetails.title;
-    let amount = this.state.priceAED;
+    let amount = this.state.eventDetails.priceAED;
     let orderId = this.state.confirm.orderId;
     let quantity = this.state.numQuantity;
     let formData = new FormData();
@@ -672,7 +672,7 @@ class App extends Component {
     formData.append("returnUrl", "https://www.khawlafoundation.com/home");
     formData.append("productType", 4);
     formData.append("orderId", orderId);
-    formData.append("amount", this.props.navigation.getParam("priceAED", ""));
+    formData.append("amount", amount);
     formData.append("orderName", productName.slice(0, 20));
     formData.append("language", this.props.lang);
     // formData.append('customerName', 'testMerchant')
@@ -1320,7 +1320,7 @@ class App extends Component {
                       <Text style={{ fontSize: 13, color: "#000" }}>
                         Amount Payable{" "}
                       </Text>
-                      : {this.props.navigation.getParam("priceAED", "")} AED
+                      : {this.state.eventDetails.priceAED} AED
                     </Text>
                     <Text
                       style={{
@@ -1330,7 +1330,7 @@ class App extends Component {
                         marginLeft: 102,
                       }}
                     >
-                      : {this.props.navigation.getParam("priceUSD", "")} USD
+                      : {this.state.eventDetails.priceUSD} USD
                     </Text>
                   </View>
                 </View>
