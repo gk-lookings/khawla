@@ -23,6 +23,7 @@ jobs:
           node-version: 14
           cache: 'npm'
      -  run : npm install
+     -  run : npm build:ios
 
      -  name: Setup Ruby (bundle)
         uses: ruby/setup-ruby@v1
