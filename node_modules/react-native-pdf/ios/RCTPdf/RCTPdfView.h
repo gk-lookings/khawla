@@ -22,6 +22,8 @@
 
 NS_CLASS_AVAILABLE_IOS(11_0) @interface RCTPdfView : UIView <UIGestureRecognizerDelegate>
 
+- (instancetype)initWithBridge:(RCTBridge *)bridge;
+
 @property(nonatomic, strong) NSString *path;
 @property(nonatomic) int page;
 @property(nonatomic) float scale;
@@ -34,7 +36,7 @@ NS_CLASS_AVAILABLE_IOS(11_0) @interface RCTPdfView : UIView <UIGestureRecognizer
 @property(nonatomic) int fitPolicy;
 @property(nonatomic) int spacing;
 @property(nonatomic, strong) NSString *password;
-
+@property(nonatomic) BOOL singlePage;
 
 @property(nonatomic, copy) RCTBubblingEventBlock onChange;
 

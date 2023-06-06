@@ -8,6 +8,11 @@
 
 A React Native module that allows you to use native UI to select a photo/video from the device library or directly from the camera, like so:
 
+🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧
+
+🚧🚧🚧🚧[Help & Input Wanted](https://github.com/react-native-community/react-native-image-picker/issues/1358) 🚧🚧🚧🚧
+
+🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧
 | iOS                                                                                                                   | Android                                                                                                                       |
 | --------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | <img title="iOS" src="https://github.com/react-community/react-native-image-picker/blob/master/images/ios-image.png"> | <img title="Android" src="https://github.com/react-community/react-native-image-picker/blob/master/images/android-image.png"> |
@@ -21,7 +26,7 @@ To use this library you need to ensure you match up with the correct version of 
 
 p.s. React Native introduced AndroidX support in 0.60, which is a **breaking change** for most libraries (incl. this one) using native Android functionality.
 
-| `@react-native-community/imagepicker` version | Required React Native Version                                                     |
+| `react-native-image-picker` version | Required React Native Version                                                     |
 | ----------------------------------------- | --------------------------------------------------------------------------------- |
 | `1.x.x`                                   | `>= 0.60` or `>= 0.59` if using [Jetifier](https://github.com/mikehardy/jetifier) |
 | `0.x.x`                                   | `<= 0.59`                                                                         |
@@ -33,7 +38,7 @@ p.s. React Native introduced AndroidX support in 0.60, which is a **breaking cha
 yarn add react-native-image-picker
 
 # RN >= 0.60
-cd ios && pod install
+npx pod-install
 
 # RN < 0.60
 react-native link react-native-image-picker
