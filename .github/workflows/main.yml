@@ -65,6 +65,11 @@ jobs:
           certificate-password: ${{ secrets.IOS_CERTIFICATE_PASSWORD }}
           workspace-path: ios/Khawla.xcworkspace
           scheme: Khawla
+      - name: Archive IPA
+        uses: actions/upload-artifact@v3
+        with:
+          name: store .ipa build 
+          path: /**/*.ipa
 
       - name: 'Upload app to TestFlight'
         uses: apple-actions/upload-testflight-build@v1
