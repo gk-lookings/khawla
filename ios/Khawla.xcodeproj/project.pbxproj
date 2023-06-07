@@ -17,6 +17,7 @@
 		491EF0ED571D44B0B3D5A2DC /* Muli.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1A106E072944A1B9AE31BDA /* Muli.ttf */; };
 		603F05921AF5424583ABB770 /* Cairo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DEFFAF92CF94D20B49A2BAE /* Cairo-Regular.ttf */; };
 		71B9B6C67E6C4744A98C100A /* Muli-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB9F1B61565B4FBE8E0B9AF6 /* Muli-Regular.ttf */; };
+		843033162A30ADED00EDC7B3 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 843033152A30ADED00EDC7B3 /* main.jsbundle */; };
 		8494860F2531DF390077BDC7 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8494860E2531DF390077BDC7 /* File.swift */; };
 		885F10FF2B0A4522AABE4466 /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F4ADDE6BB1247C89B8FACDD /* Rubik-Bold.ttf */; };
 		89953FE706AE411A82FB5848 /* Calibri.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61C88A15746941AB91802BB7 /* Calibri.ttf */; };
@@ -92,6 +93,7 @@
 		7C2BED8C76EC4E21A5165154 /* AirbnbCereal-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AirbnbCereal-Medium.ttf"; path = "../assets/fonts/AirbnbCereal-Medium.ttf"; sourceTree = "<group>"; };
 		8146A0C2FF6E40EBA1AE423F /* Muli-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Muli-Medium.ttf"; path = "../assets/fonts/Muli-Medium.ttf"; sourceTree = "<group>"; };
 		84241CA9B67C4B818106D5A1 /* Cairo-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Cairo-ExtraLight.ttf"; path = "../assets/fonts/Cairo-ExtraLight.ttf"; sourceTree = "<group>"; };
+		843033152A30ADED00EDC7B3 /* main.jsbundle */ = {isa = PBXFileReference; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		8494860D2531DF390077BDC7 /* Khawla-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Khawla-Bridging-Header.h"; sourceTree = "<group>"; };
 		8494860E2531DF390077BDC7 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		8FC9BA930CEE402ABA01D0C0 /* Rubik-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Medium.ttf"; path = "../assets/fonts/Rubik-Medium.ttf"; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				843033152A30ADED00EDC7B3 /* main.jsbundle */,
 				8494860E2531DF390077BDC7 /* File.swift */,
 				CE0380D224B0E80200DADC1F /* Khawla-tvOSRelease.entitlements */,
 				CECC634C23E5A79A00BB653D /* AirGoogleMaps */,
@@ -406,6 +409,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843033162A30ADED00EDC7B3 /* main.jsbundle in Resources */,
 				CE2DEA6323D71470008F74CD /* AirbnbCereal-Medium.ttf in Resources */,
 				CE3497F82407FB36002F453F /* GoogleService-Info.plist in Resources */,
 				CE5D74D823D7111300F7667B /* Rubik-Medium.ttf in Resources */,
