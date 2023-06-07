@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "413364078983",
+    "firebase_url": "https://khawla-foundation.firebaseio.com",
+    "project_id": "khawla-foundation",
+    "storage_bucket": "khawla-foundation.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:413364078983:android:fb9e35df5e54ba7b6f2b22",
+        "android_client_info": {
+          "package_name": "org.evillage.khawlafoundation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "413364078983-c23afp0ivbb5n25j3lkso2o09vk3jgtg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.evillage.khawlafoundation",
+            "certificate_hash": "0e39d4d6b00fea7ced5847fe9aae9f121b415573"
+          }
+        },
+        {
+          "client_id": "413364078983-66nc7vbo86duakk6h2jfm2vqkh3d0ndr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.evillage.khawlafoundation",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "413364078983-8mdo8mnkaff8v4j3qn74docmjnstd95k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAe0HE99CgHZ6DmDqEyeE_SAcZ1jZS6Igg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "413364078983-7pnkp7159aih5atq8kiulhc2hchucb41.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "413364078983-7gvvec15ob8gusot2m32s54efn6j86c4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.evillage.khawlafoundation"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
