@@ -19,6 +19,7 @@
 		71B9B6C67E6C4744A98C100A /* Muli-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB9F1B61565B4FBE8E0B9AF6 /* Muli-Regular.ttf */; };
 		843033162A30ADED00EDC7B3 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 843033152A30ADED00EDC7B3 /* main.jsbundle */; };
 		8494860F2531DF390077BDC7 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8494860E2531DF390077BDC7 /* File.swift */; };
+		849F34DF2A33578F00033786 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 849F34DE2A33578F00033786 /* assets */; };
 		885F10FF2B0A4522AABE4466 /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F4ADDE6BB1247C89B8FACDD /* Rubik-Bold.ttf */; };
 		89953FE706AE411A82FB5848 /* Calibri.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61C88A15746941AB91802BB7 /* Calibri.ttf */; };
 		8B273E7AE0038AE122B8C86B /* libPods-KhawlaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5C3FB9C3B5CE982C21E54B /* libPods-KhawlaTests.a */; };
@@ -96,6 +97,7 @@
 		843033152A30ADED00EDC7B3 /* main.jsbundle */ = {isa = PBXFileReference; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		8494860D2531DF390077BDC7 /* Khawla-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Khawla-Bridging-Header.h"; sourceTree = "<group>"; };
 		8494860E2531DF390077BDC7 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		849F34DE2A33578F00033786 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
 		8FC9BA930CEE402ABA01D0C0 /* Rubik-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Medium.ttf"; path = "../assets/fonts/Rubik-Medium.ttf"; sourceTree = "<group>"; };
 		9013D4A22DAB4F179506FD30 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Medium.ttf"; path = "../assets/fonts/Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		923CFBEB8779AE11EA635FAF /* Pods-Khawla-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Khawla-tvOS.release.xcconfig"; path = "Target Support Files/Pods-Khawla-tvOS/Pods-Khawla-tvOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				849F34DE2A33578F00033786 /* assets */,
 				843033152A30ADED00EDC7B3 /* main.jsbundle */,
 				8494860E2531DF390077BDC7 /* File.swift */,
 				CE0380D224B0E80200DADC1F /* Khawla-tvOSRelease.entitlements */,
@@ -409,6 +412,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849F34DF2A33578F00033786 /* assets in Resources */,
 				843033162A30ADED00EDC7B3 /* main.jsbundle in Resources */,
 				CE2DEA6323D71470008F74CD /* AirbnbCereal-Medium.ttf in Resources */,
 				CE3497F82407FB36002F453F /* GoogleService-Info.plist in Resources */,
@@ -678,7 +682,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Khawla/Khawla Foundation.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0;
+				CURRENT_PROJECT_VERSION = 1.1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = ZK97HXBNS6;
 				"EXCLUDED_ARCHS[sdk=*]" = arm64;
@@ -760,7 +764,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0;
+				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_TEAM = ZK97HXBNS6;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",

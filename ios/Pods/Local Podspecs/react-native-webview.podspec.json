@@ -3,10 +3,7 @@
   "version": "8.1.2",
   "summary": "React Native WebView component for iOS, Android, and macOS",
   "license": "MIT",
-  "authors": {
-    "name": "Jamon Holmgren",
-    "email": "jamon@infinite.red"
-  },
+  "authors": "Jamon Holmgren <jamon@infinite.red>",
   "homepage": "https://github.com/react-native-community/react-native-webview#readme",
   "platforms": {
     "ios": "9.0"
