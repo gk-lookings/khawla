@@ -20,6 +20,8 @@ import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
 import co.apptailor.googlesignin.RNGoogleSigninPackage;
 // @react-native-community/masked-view
 import org.reactnative.maskedview.RNCMaskedViewPackage;
+// @react-native-community/toolbar-android
+import com.reactnativecommunity.toolbarandroid.ReactToolbarPackage;
 // lottie-react-native
 import com.airbnb.android.react.lottie.LottiePackage;
 // react-native-device-info
@@ -42,12 +44,12 @@ import com.imagepicker.ImagePickerPackage;
 import com.BV.LinearGradient.LinearGradientPackage;
 // react-native-maps
 import com.airbnb.android.react.maps.MapsPackage;
-// react-native-pdf
-import org.wonday.pdf.RCTPdfView;
 // react-native-reanimated
 import com.swmansion.reanimated.ReanimatedPackage;
 // react-native-safe-area-context
 import com.th3rdwave.safeareacontext.SafeAreaContextPackage;
+// react-native-screens
+import com.swmansion.rnscreens.RNScreensPackage;
 // react-native-splash-screen
 import org.devio.rn.splashscreen.SplashScreenReactPackage;
 // react-native-svg
@@ -108,6 +110,7 @@ public class PackageList {
       new AsyncStoragePackage(),
       new RNGoogleSigninPackage(),
       new RNCMaskedViewPackage(),
+      new ReactToolbarPackage(),
       new LottiePackage(),
       new RNDeviceInfo(),
       new DocumentPickerPackage(),
@@ -119,9 +122,9 @@ public class PackageList {
       new ImagePickerPackage(),
       new LinearGradientPackage(),
       new MapsPackage(),
-      new RCTPdfView(),
       new ReanimatedPackage(),
       new SafeAreaContextPackage(),
+      new RNScreensPackage(),
       new SplashScreenReactPackage(),
       new SvgPackage(),
       new VectorIconsPackage(),

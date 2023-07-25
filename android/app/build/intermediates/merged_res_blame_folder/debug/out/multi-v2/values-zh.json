@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh/values-zh.xml",
+            "outputFile": "/Users/ameen/Documents/Projects/khawla/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh/values-zh.xml",
             "map": [
                 {
-                    "source": "/Users/hemandp/.gradle/caches/transforms-2/files-2.1/3556832edf8313d396bc852f7acaef56/jetified-ucrop-2.2.2-native/res/values-zh/values-zh.xml",
+                    "source": "/Users/ameen/.gradle/caches/transforms-2/files-2.1/de9788efabe980da9367cdec6d76432c/jetified-ucrop-2.2.2-native/res/values-zh/values-zh.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",

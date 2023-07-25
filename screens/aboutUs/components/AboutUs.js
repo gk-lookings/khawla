@@ -20,12 +20,12 @@ class App extends Component {
     static navigationOptions = ({ navigation }) => {
         return {
             headerTitle: navigation.getParam('title',
-            <View style={{ flexDirection: 'row', alignItems: 'center', marginLeft: 15,marginBottom:10 ,width:width/2}}>
-            <Image resizeMode ='contain' source={Images.logoLetterNew} style={{ height: 45, width: width / 2 }} />
-            <View>
-              {/* <Image source={Images.logo} style={{ height: 39.2, width: 9.28, marginLeft: 5 }} /> */}
-            </View>
-          </View>
+                <View style={{ flexDirection: 'row', alignItems: 'center', marginLeft: 15, marginBottom: 10, width: width / 2 }}>
+                    <Image resizeMode='contain' source={Images.logoLetterNew} style={{ height: 45, width: width / 2 }} />
+                    <View>
+                        {/* <Image source={Images.logo} style={{ height: 39.2, width: 9.28, marginLeft: 5 }} /> */}
+                    </View>
+                </View>
             ),
             headerTitleStyle: {
                 flex: 1,
@@ -80,7 +80,7 @@ class App extends Component {
                 }
             });
 
-        await Api('get',  STATIC_PAGE + `?pageId=2&language=${language}`)
+        await Api('get', STATIC_PAGE + `?pageId=2&language=${language}`)
             .then((response) => {
                 if (response) {
                     this.setState({
@@ -107,7 +107,8 @@ class App extends Component {
                         isLoading: false
                     })
                 }
-                else {0
+                else {
+                    0
                     this.setState({
                         isLoading: false
                     })
@@ -134,10 +135,10 @@ class App extends Component {
 
     transform = (data) => {
         if (data) {
-          return data.replace(/<[^>]+>/g, "");
+            return data.replace(/<[^>]+>/g, "");
         }
         return data;
-      };
+    };
 
 
     render() {
@@ -151,7 +152,7 @@ class App extends Component {
                 {!this.state.isLoading &&
                     <ScrollView style={{ flex: 1 }}>
                         <SafeAreaView style={styles.mainContainer}>
-                            <View style={{ width: '100%', height: height / 1.65, marginTop: -200 }} >
+                            {/* <View style={{ width: '100%', height: height / 1.65, marginTop: -200 }} >
                                 <Image
                                     source={Images.khawlaTop}
                                     style={{ width: '100%', height: '100%', backgroundColor: '#fff', }}
@@ -162,28 +163,28 @@ class App extends Component {
                                     style={styles.activityIndicator}
                                     animating={this.state.loading}
                                 />
-                            </View>
+                            </View> */}
                             <View style={{ backgroundColor: '#fff' }}>
 
                                 {/* about us */}
 
-                            <Text style={[styles.title, this.props.lang == 'en' && { textAlign: 'left' },{marginTop:10}]}>{this.state.aboutus.title}</Text>
-                            <Text style={styles.content}>{this.transform(this.state.aboutus.description)}</Text>
+                                <Text style={[styles.title, this.props.lang == 'en' && { textAlign: 'left' }, { marginTop: 10 }]}>{this.state.aboutus.title}</Text>
+                                <Text style={styles.content}>{this.transform(this.state.aboutus.description)}</Text>
 
                                 {/* vision */}
 
-                            <Text style={[styles.title, this.props.lang == 'en' && { textAlign: 'left' }]}>{this.state.vision.title}</Text>
-                            <Text style={styles.content}>{this.transform(this.state.vision.description)}</Text>
+                                <Text style={[styles.title, this.props.lang == 'en' && { textAlign: 'left' }]}>{this.state.vision.title}</Text>
+                                <Text style={styles.content}>{this.transform(this.state.vision.description)}</Text>
 
                                 {/* mission */}
 
-                            <Text style={[styles.title, this.props.lang == 'en' && { textAlign: 'left' }]}>{this.state.mission.title}</Text>
-                            <Text style={styles.content}>{this.transform(this.state.mission.description)}</Text>
+                                <Text style={[styles.title, this.props.lang == 'en' && { textAlign: 'left' }]}>{this.state.mission.title}</Text>
+                                <Text style={styles.content}>{this.transform(this.state.mission.description)}</Text>
 
                                 {/* goals */}
 
-                            <Text style={[styles.title, this.props.lang == 'en' && { textAlign: 'left' }]}>{this.state.goals.title}</Text>
-                            <Text style={styles.content}>{this.transform(this.state.goals.description)}</Text>
+                                <Text style={[styles.title, this.props.lang == 'en' && { textAlign: 'left' }]}>{this.state.goals.title}</Text>
+                                <Text style={styles.content}>{this.transform(this.state.goals.description)}</Text>
 
                             </View>
                             <Image
@@ -218,15 +219,15 @@ const styles = StyleSheet.create({
         textAlign: 'right',
         color: PRIMARY_COLOR,
         fontFamily: FONT_MULI_BOLD,
-        paddingHorizontal:20,
-        marginTop:70
+        paddingHorizontal: 20,
+        marginTop: 70
     },
     content: {
         textAlign: 'justify',
         fontSize: 16,
         fontFamily: FONT_MULI_REGULAR,
         marginTop: 10,
-        paddingHorizontal:20
+        paddingHorizontal: 20
     },
     containerMain: {
         backgroundColor: PRIMARY_COLOR,

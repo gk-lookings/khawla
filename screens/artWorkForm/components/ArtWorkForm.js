@@ -24,12 +24,12 @@ class App extends Component {
     static navigationOptions = ({ navigation }) => {
         return {
             headerTitle: navigation.getParam('title',
-            <View style={{ flexDirection: 'row', alignItems: 'center', marginLeft: 15,marginBottom:10 ,width:width/2}}>
-            <Image resizeMode ='contain' source={Images.logoLetterNew} style={{ height: 45, width: width / 2 }} />
-            <View>
-              {/* <Image source={Images.logo} style={{ height: 39.2, width: 9.28, marginLeft: 5 }} /> */}
-            </View>
-          </View>
+                <View style={{ flexDirection: 'row', alignItems: 'center', marginLeft: 15, marginBottom: 10, width: width / 2 }}>
+                    <Image resizeMode='contain' source={Images.logoLetterNew} style={{ height: 45, width: width / 2 }} />
+                    <View>
+                        {/* <Image source={Images.logo} style={{ height: 39.2, width: 9.28, marginLeft: 5 }} /> */}
+                    </View>
+                </View>
             ),
             headerTitleStyle: {
                 flex: 1,
@@ -262,7 +262,7 @@ class App extends Component {
                 <KeyboardAwareScrollView>
                     <View style={styles.logoContainer} >
                         <Image
-                            source={Images.logoFull}
+                            source={Images.logoLetterNew}
                             style={styles.image}
                             resizeMode="contain"
                         />

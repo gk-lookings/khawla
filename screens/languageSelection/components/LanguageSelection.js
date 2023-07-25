@@ -5,7 +5,7 @@ import { CommonActions } from '@react-navigation/native'
 import { PRIMARY_COLOR } from '../../../assets/color'
 import { FONT_MULI_BOLD } from '../../../assets/fonts'
 import Images from '../../../assets/images'
-import {resetFirstLogin} from '../../languageSelection/actions'
+import { resetFirstLogin } from '../../languageSelection/actions'
 import i18n from '../../../i18n'
 import SplashScreen from 'react-native-splash-screen'
 
@@ -36,7 +36,7 @@ class App extends Component {
         SplashScreen.hide()
     }
 
-    changeLanguage () {
+    changeLanguage() {
         i18n.locale = this.state.language
         this.props.dispatch({ type: 'CHANGE_LANGUAGE', locale: this.state.language })
         this.props.navigation.navigate('Home')
@@ -47,12 +47,12 @@ class App extends Component {
         return (
             <SafeAreaView style={styles.mainContainer}>
                 <View style={styles.content1}>
-                    <Image source={Images.logoFull} resizeMode="contain" style={{ height: height/5, width: 300, alignSelf: 'center', marginTop: '10%' }} />
-                    <Image source={Images.intro} resizeMode="contain" style={{ height: height/3.5, width: width, alignSelf: 'center', marginTop: '10%' }} />
+                    <Image source={Images.logoLetterNew} resizeMode="contain" style={{ height: height / 5, width: 300, alignSelf: 'center', marginTop: '10%' }} />
+                    <Image source={Images.intro} resizeMode="contain" style={{ height: height / 3.5, width: width, alignSelf: 'center', marginTop: '10%' }} />
                     <View style={{ width: width, marginTop: '30%', flexDirection: 'row', justifyContent: 'center' }}>
                         {options.map((item) =>
                             <View key={item.key} style={styles.buttonContainer2}>
-                                <TouchableOpacity style={[styles.button, this.props.lang === item.key && { backgroundColor: '#b38806', borderColor: '#b38806' }]} onPress={() => this.setState({ language: item.key },()=>this.changeLanguage(), ()=>this.props.dispatch(resetFirstLogin()))}>
+                                <TouchableOpacity style={[styles.button, this.props.lang === item.key && { backgroundColor: '#b38806', borderColor: '#b38806' }]} onPress={() => this.setState({ language: item.key }, () => this.changeLanguage(), () => this.props.dispatch(resetFirstLogin()))}>
                                     <Text style={[styles.text1, this.props.lang === item.key && { color: '#fff' }]}>{item.value}</Text>
                                 </TouchableOpacity>
                             </View>

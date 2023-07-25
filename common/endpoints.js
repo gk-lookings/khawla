@@ -1,4 +1,4 @@
-export const HOST = 'https://www.khawlafoundation.com/api/'
+export const HOST = 'https://www.khawlaartandculture.com/api/'
 export const CONTACT = HOST + 'contact-kacf.php'
 export const EVENTS = HOST + 'json_events.php?'
 export const EVENTS_DETAIL = HOST + "json_event_indetail.php?"
@@ -49,7 +49,7 @@ export const ARTISTS_LIST = HOST + "json_artistsDirectory.php"
 export const ARTISTS_COUNTRY = HOST + "json_artistCountries.php"
 export const MY_ORDER = HOST + "json_orders.php"
 export const SEARCH = HOST + "search.php"
-export const EVENT_CATEGORY = HOST+ "json_eventCategories.php"
+export const EVENT_CATEGORY = HOST + "json_eventCategories.php"
 export const ARTIST_CATEGORIES = HOST + 'json_artistCategories.php'
 export const AUCTION_ARTWORK = HOST + "json_auctionArtworks.php"
 export const AUCTION_BIDDERS = HOST + "json_auctionBidders.php"

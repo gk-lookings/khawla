@@ -35,16 +35,16 @@ const { height, width } = Dimensions.get("screen");
 class DrawerMenu extends Component {
   navigateToScreen = (route) => () => {
     console.log("route", this.props.navigation.state.index);
-    if (this.props.navigation.state.index == 0) {
-      this.props.navigation.dispatch(
-        StackActions.reset({
-          index: 0,
-          actions: [NavigationActions.navigate({ routeName: "Home" })],
-          key: "Home",
-        })
-      );
-      this.props.navigation.navigate("Home");
-    }
+    // if (this.props.navigation.state.index == 0) {
+    //   this.props.navigation.dispatch(
+    //     StackActions.reset({
+    //       index: 0,
+    //       actions: [NavigationActions.navigate({ routeName: "Home" })],
+    //       key: "Home",
+    //     })
+    //   );
+    //   this.props.navigation.navigate("Home");
+    // }
     const navigateAction = NavigationActions.navigate({
       routeName: route,
     });
@@ -52,7 +52,7 @@ class DrawerMenu extends Component {
   };
 
   componentDidMount() {
-    var language = this.props.lang == "ar" ? 1 : 2;
+    const language = this.props.lang == "ar" ? 1 : 2;
     Api("get", SEQUENCE + `?language=${language}`).then((responseJson) => {
       const filter = responseJson.sort((a, b) =>
         a.sequence > b.sequence ? 1 : -1
@@ -97,62 +97,57 @@ class DrawerMenu extends Component {
     return (
       <View style={styles.mainContainer}>
         <ScrollView showsVerticalScrollIndicator={false}>
-          <ImageBackground
-            blurRadius={2}
-            source={Images.cover}
-            resizeMode="stretch"
-            style={styles.coverContainer}
-          >
-            <TouchableOpacity
-              style={styles.imageCover}
-              onPress={() => this.props.navigation.navigate("Settings")}
-            >
-              <Image
-                source={
-                  this.props.user && this.props.user.profile_pic
-                    ? {
-                        uri: `${this.props.user.profile_pic}&random=${
-                          this.state.cache
-                        }`,
-                      }
-                    : Images.default
-                }
-                style={styles.imagePro}
-              />
-            </TouchableOpacity>
-            {this.props.user && (
+          <SafeAreaView style={styles.container}>
+            <View style={styles.coverContainer}>
               <TouchableOpacity
-                style={styles.userData}
+                style={styles.imageCover}
                 onPress={() => this.props.navigation.navigate("Settings")}
               >
-                <Text style={styles.fullname}>
-                  {this.props.user && this.props.user.fullname
-                    ? this.props.user.fullname
-                    : "Guest User"}
-                </Text>
-                {/* <Text numberOfLines={1} style={styles.email}>{this.props.user.email}</Text> */}
+                <Image
+                  source={
+                    this.props.user && this.props.user.profile_pic
+                      ? {
+                        uri: `${this.props.user.profile_pic}&random=${this.state.cache
+                          }`,
+                      }
+                      : Images.default
+                  }
+                  style={styles.imagePro}
+                />
               </TouchableOpacity>
-            )}
-            {!this.state.user && (
-              <View style={styles.userDataLogin}>
-                <Text style={styles.fullname}>
-                  {this.props.user && this.props.user.fullname
-                    ? this.props.user.fullname
-                    : "Guest User"}
-                </Text>
+              {this.props.user && (
                 <TouchableOpacity
-                  onPress={() => this.props.navigation.navigate("Login")}
-                  style={styles.loginBox}
+                  style={styles.userData}
+                  onPress={() => this.props.navigation.navigate("Settings")}
                 >
-                  <Text style={styles.loginText}>Login</Text>
-                  <AntDesign name="login" size={18} color="#fff" />
+                  <Text style={styles.fullname}>
+                    {this.props.user && this.props.user.username
+                      ? this.props.user.username
+                      : "Guest User"}
+                  </Text>
+                  <Text style={styles.myProfileText}>My Profile</Text>
+                  {/* <Text numberOfLines={1} style={styles.email}>{this.props.user.email}</Text> */}
                 </TouchableOpacity>
-              </View>
-            )}
-          </ImageBackground>
-          <SafeAreaView style={styles.container}>
+              )}
+              {!this.state.user && (
+                <View style={styles.userDataLogin}>
+                  <Text style={styles.fullname}>
+                    {this.props.user && this.props.user.fullname
+                      ? this.props.user.fullname
+                      : "Guest User"}
+                  </Text>
+                  <TouchableOpacity
+                    onPress={() => this.props.navigation.navigate("Login")}
+                    style={styles.loginBox}
+                  >
+                    <Text style={styles.loginText}>Login</Text>
+                    <AntDesign name="login" size={12} />
+                  </TouchableOpacity>
+                </View>
+              )}
+            </View>
             <View style={styles.contentContainer}>
-              <View style={styles.card}>
+              <View style={[styles.card, { paddingTop: 8 }]}>
                 <TouchableOpacity
                   style={
                     this.props.navigation.state.index == 0
@@ -468,69 +463,69 @@ class DrawerMenu extends Component {
                 {this.state.sequence.every(
                   (item) => item.moduleName == "Auction"
                 ) && (
-                  <TouchableOpacity
-                    style={
-                      this.props.navigation.state.index == 17
-                        ? styles.contentActive
-                        : styles.content
-                    }
-                    onPress={this.navigateToScreen("AuctionArt")}
-                  >
-                    <Text
+                    <TouchableOpacity
                       style={
                         this.props.navigation.state.index == 17
-                          ? styles.labelStyle
-                          : styles.inactiveLabelStyle
+                          ? styles.contentActive
+                          : styles.content
                       }
+                      onPress={this.navigateToScreen("AuctionArt")}
                     >
-                      Auction
-                    </Text>
-                  </TouchableOpacity>
-                )}
+                      <Text
+                        style={
+                          this.props.navigation.state.index == 17
+                            ? styles.labelStyle
+                            : styles.inactiveLabelStyle
+                        }
+                      >
+                        Auction
+                      </Text>
+                    </TouchableOpacity>
+                  )}
                 {this.state.sequence.every(
                   (item) => item.moduleName == "AlKhattFestival"
                 ) && (
-                  <TouchableOpacity
-                    style={
-                      this.props.navigation.state.index == 18
-                        ? styles.contentActive
-                        : styles.content
-                    }
-                    onPress={this.navigateToScreen("Festival")}
-                  >
-                    <Text
+                    <TouchableOpacity
                       style={
                         this.props.navigation.state.index == 18
-                          ? styles.labelStyle
-                          : styles.inactiveLabelStyle
+                          ? styles.contentActive
+                          : styles.content
                       }
+                      onPress={this.navigateToScreen("Festival")}
                     >
-                      Al khatt festival
-                    </Text>
-                  </TouchableOpacity>
-                )}
+                      <Text
+                        style={
+                          this.props.navigation.state.index == 18
+                            ? styles.labelStyle
+                            : styles.inactiveLabelStyle
+                        }
+                      >
+                        Al khatt festival
+                      </Text>
+                    </TouchableOpacity>
+                  )}
                 {this.state.sequence.every(
                   (item) => item.moduleName == "Online Shopping"
                 ) && (
-                  <TouchableOpacity
-                    style={
-                      this.props.navigation.state.index == 19
-                        ? styles.contentActive
-                        : styles.content
-                    }
-                    onPress={this.navigateToScreen("OnlineShopping")}
-                  >
-                    <Text
+                    <TouchableOpacity
                       style={
                         this.props.navigation.state.index == 19
-                          ? styles.labelStyle
-                          : styles.inactiveLabelStyle
+                          ? styles.contentActive
+                          : styles.content
                       }
+                      onPress={this.navigateToScreen("OnlineShopping")}
                     >
-                      {i18n.t("online_store")}
-                    </Text>
-                  </TouchableOpacity>
-                )}
+                      <Text
+                        style={
+                          this.props.navigation.state.index == 19
+                            ? styles.labelStyle
+                            : styles.inactiveLabelStyle
+                        }
+                      >
+                        {i18n.t("online_store")}
+                      </Text>
+                    </TouchableOpacity>
+                  )}
                 <TouchableOpacity
                   style={
                     this.props.navigation.state.index == 20
@@ -585,31 +580,37 @@ class DrawerMenu extends Component {
                     {i18n.t("register_visitor")}
                   </Text>
                 </TouchableOpacity>
-                <TouchableOpacity
-                  style={[styles.content2, { marginTop: 20 }]}
-                  onPress={this.navigateToScreen("PrivacyPolicy")}
-                >
-                  <Text style={styles.inactiveLabelStyle2}>Privacy Policy</Text>
-                </TouchableOpacity>
-                <TouchableOpacity
-                  style={styles.content2}
-                  onPress={this.navigateToScreen("CookiePolicy")}
-                >
-                  <Text style={styles.inactiveLabelStyle2}>Cookie Policy</Text>
-                </TouchableOpacity>
-                <TouchableOpacity
-                  style={styles.content2}
-                  onPress={this.navigateToScreen("TermsCondition")}
-                >
-                  <Text style={styles.inactiveLabelStyle2}>
-                    Terms and Conditions
-                  </Text>
-                </TouchableOpacity>
+                <View style={styles.policyView}>
+                  <TouchableOpacity
+                    style={[styles.content2, { marginTop: 0 }]}
+                    onPress={this.navigateToScreen("PrivacyPolicy")}
+                  >
+                    <Text style={styles.inactiveLabelStyle2}>
+                      Privacy Policy
+                    </Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                    style={styles.content2}
+                    onPress={this.navigateToScreen("CookiePolicy")}
+                  >
+                    <Text style={styles.inactiveLabelStyle2}>
+                      Cookie Policy
+                    </Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                    style={styles.content2}
+                    onPress={this.navigateToScreen("TermsCondition")}
+                  >
+                    <Text style={styles.inactiveLabelStyle2}>
+                      Terms and Conditions
+                    </Text>
+                  </TouchableOpacity>
+                </View>
               </View>
             </View>
             <View>
               <Image
-                source={Images.logoFull}
+                source={Images.logoLetterNew}
                 style={styles.imageContainer}
                 resizeMode="contain"
               />
@@ -701,44 +702,49 @@ class DrawerMenu extends Component {
                 />
               </TouchableOpacity>
             </View>
-            <View style={{flexDirection:"row",alignItems:"center"}}>
-            <TouchableOpacity
-              onPress={() => {
-                Linking.openURL("https://linktr.ee/khawlaartandculture");
-              }}
+            <View
               style={{
-                backgroundColor: PRIMARY_COLOR,
-                height: 29,
-                width: 29,
-                borderRadius: 29,
+                flexDirection: "row",
                 alignItems: "center",
                 justifyContent: "center",
-                marginLeft: 23,
-                marginBottom: 10,
               }}
             >
-              <Image
-                source={Images.linktree}
-                style={{
-                  height: 20,
-                  width: 20,
+              <TouchableOpacity
+                onPress={() => {
+                  Linking.openURL("https://linktr.ee/khawlaartandculture");
                 }}
-                resizeMode={"contain"}
-              />
-            </TouchableOpacity>
-            <TouchableOpacity
-              onPress={() => {
-                Linking.openURL("https://wa.me/+971563847777");
-              }}
-            >
-              <FontAwesome
-                name="whatsapp"
-                size={32}
-                color={PRIMARY_COLOR}
-                style={{ marginLeft: 15,marginBottom:10 }}
-              />
-            </TouchableOpacity>
-          
+                style={{
+                  backgroundColor: PRIMARY_COLOR,
+                  height: 29,
+                  width: 29,
+                  borderRadius: 29,
+                  alignItems: "center",
+                  justifyContent: "center",
+                  marginLeft: 23,
+                  marginBottom: 10,
+                }}
+              >
+                <Image
+                  source={Images.linktree}
+                  style={{
+                    height: 20,
+                    width: 20,
+                  }}
+                  resizeMode={"contain"}
+                />
+              </TouchableOpacity>
+              <TouchableOpacity
+                onPress={() => {
+                  Linking.openURL("https://wa.me/+971563847777");
+                }}
+              >
+                <FontAwesome
+                  name="whatsapp"
+                  size={30}
+                  color={PRIMARY_COLOR}
+                  style={{ marginLeft: 15, marginBottom: 10 }}
+                />
+              </TouchableOpacity>
             </View>
           </SafeAreaView>
         </ScrollView>
@@ -768,7 +774,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   imageContainer: {
-    height: 55.012,
+    height: 45.012,
     width: 168.513,
     alignSelf: "center",
     marginBottom: 10,
@@ -795,20 +801,17 @@ const styles = StyleSheet.create({
     alignSelf: "center",
   },
   loginText: {
-    color: "#fff",
     fontFamily: FONT_MEDIUM,
-    fontSize: 15,
+    fontSize: 12,
+    lineHeight: 15,
     marginRight: 5,
-    textShadowColor: "rgba(0, 0, 0, 0.75)",
-    textShadowOffset: { width: 0, height: 1 },
-    textShadowRadius: 3,
   },
   card: {
     padding: 15,
   },
   content: {
     flexDirection: "row",
-    height: 60,
+    height: 50,
     paddingLeft: 15,
     alignItems: "center",
     borderBottomWidth: 0.5,
@@ -822,7 +825,7 @@ const styles = StyleSheet.create({
   },
   contentActive: {
     flexDirection: "row",
-    height: 60,
+    height: 50,
     paddingLeft: 15,
     alignItems: "center",
     backgroundColor: "white",
@@ -837,14 +840,14 @@ const styles = StyleSheet.create({
   },
   labelStyle: {
     fontSize: 15,
-    fontFamily: FONT_MULI_EXTRABOLD,
+    fontFamily: FONT_MULI_BOLD,
     color: PRIMARY_COLOR,
     marginLeft: 15,
   },
   inactiveLabelStyle: {
     fontSize: 15,
     marginLeft: 15,
-    fontFamily: FONT_MULI_BOLD,
+    fontFamily: FONT_MULI_REGULAR,
     textAlign: "left",
   },
   inactiveLabelStyle2: {
@@ -856,36 +859,45 @@ const styles = StyleSheet.create({
     textDecorationLine: "underline",
   },
   coverContainer: {
-    height: 180,
-    width: "100%",
+    width: "90%",
+    alignItems: "center",
+    marginTop: 15,
+    borderRadius: 10,
+    backgroundColor: "#fff",
+    shadowColor: "#000000",
+    shadowOffset: {
+      width: 1.5,
+      height: 1.5,
+    },
+    shadowRadius: 1.5,
+    shadowOpacity: 0.15,
+    elevation: 1.5,
+    marginHorizontal: 10,
+    alignSelf: "center",
+    paddingVertical: 8,
     flexDirection: "row",
-    alignItems: "flex-end",
   },
   imageCover: {
-    height: 80,
-    width: 80,
+    height: 57,
+    width: 57,
     borderRadius: 50,
     backgroundColor: "#fff",
     marginLeft: 10,
-    marginBottom: 3,
     justifyContent: "center",
     alignItems: "center",
     borderWidth: 3,
     borderColor: "white",
   },
   imagePro: {
-    height: 77,
-    width: 77,
+    height: 50,
+    width: 50,
     borderRadius: 50,
   },
   userData: {
     marginLeft: 5,
-    marginBottom: 5,
   },
   userDataLogin: {
     marginLeft: 5,
-    marginBottom: 5,
-    borderRadius: 15,
   },
   email: {
     fontSize: 13,
@@ -902,15 +914,31 @@ const styles = StyleSheet.create({
     height: "100%",
   },
   fullname: {
-    fontSize: 16,
-    fontWeight: "bold",
+    fontSize: 15,
+    fontFamily: FONT_MEDIUM,
+    lineHeight: 20,
+  },
+  myProfileText: {
+    fontSize: 12,
     fontFamily: FONT_PRIMARY,
-    color: "#fff",
-    textShadowColor: "rgba(0, 0, 0, 0.75)",
-    textShadowOffset: { width: 0, height: 1 },
-    textShadowRadius: 3,
+    lineHeight: 20,
   },
   loginBox: {
     flexDirection: "row",
+    alignItems: "center",
+  },
+  policyView: {
+    backgroundColor: "#fff",
+    shadowColor: "#000000",
+    shadowOffset: {
+      width: 0.5,
+      height: 0.5,
+    },
+    shadowRadius: 0.5,
+    shadowOpacity: 0.15,
+    elevation: 0.5,
+    borderRadius: 10,
+    marginTop: 10,
+    paddingBottom: 5,
   },
 });

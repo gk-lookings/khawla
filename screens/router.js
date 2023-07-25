@@ -99,7 +99,7 @@ import EventArtist from "./eventDetail/components/EventArtist";
 import HhCollection from "./eventDetail/components/HhCollection";
 import hhWorkDetails from "./eventDetail/components/hhWorkDetails";
 import kac from "./kac/components/kac";
-import PdfView from "./eventDetail/components/PdfView";
+// import PdfView from "./eventDetail/components/PdfView";
 const { height, width } = Dimensions.get("screen");
 
 const HomeStack = createStackNavigator(
@@ -370,9 +370,9 @@ const EventDetailStack = createStackNavigator(
     hhWorkDetails: {
       screen: hhWorkDetails,
     },
-    PdfView: {
-      screen: PdfView,
-    },
+    // PdfView: {
+    //   screen: PdfView,
+    // },
     // ArtistDetail:{
     //     screen:ArtistDetail
     // }

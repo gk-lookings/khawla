@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/hemandp/Desktop/Projects/khawla/khawla/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
+            "outputFile": "/Users/ameen/Documents/Projects/khawla/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "/Users/hemandp/.gradle/caches/transforms-2/files-2.1/23ac4068294c0938526b714f211dae63/appcompat-1.1.0/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "source": "/Users/ameen/.gradle/caches/transforms-2/files-2.1/23ac4068294c0938526b714f211dae63/appcompat-1.1.0/res/values-hdpi-v4/values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
